@@ -1,0 +1,804 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*border: 1px solid red;*/
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?l3f3na");
+  src: url("assets/fonts/icomoon.eot?l3f3na#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?l3f3na") format("truetype"), url("../fonts/icomoon.woff?l3f3na") format("woff"), url("../fonts/icomoon.svg?l3f3na#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search1:before {
+  content: "\e901";
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+/******************************************************************/
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.flexinam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  /* kad nebutu bullet pointu */
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  /* padaro, kad prisitaikytu prie tevynainio */
+  display: block;
+  /* kad nebutu tarpelio po nuotrauka */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Roboto", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-weight: 300;
+}
+
+/* START: botton-to-top */
+.myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #b7a48e;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.myBtn:hover {
+  background-color: #a1886b;
+}
+
+/* END: botton-to-top */
+/* 1 SECTION START: NAVIGATION MENIU */
+.float-navigation {
+  background-color: #2a2d2c;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.float-navigation.shrink .container {
+  height: 73px;
+}
+
+/*https://codepen.io/malZiiirA/pen/cbfED*/
+.float-navigation.shrink .logo {
+  padding: 15px 15px 15px 35px;
+  max-width: 105px;
+}
+
+.float-navigation .container {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.logo {
+  padding: 16.609px 15px 16.625px 35px;
+  max-width: 155px;
+}
+
+.meniu {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.meniu a {
+  color: #fff;
+  font-size: 0.75rem;
+  font-family: "Karla", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  letter-spacing: 2px;
+  /*cia gal irgi reikia reliatyvaus skaiciaus?*/
+  padding: 10px;
+}
+
+/* kazkaip kitaip reiketu selectinti!!! */
+.unique a {
+  color: #e8d2b8;
+}
+
+.meniu a:hover, span:hover {
+  color: #e8d2b8;
+}
+
+/* kazkaip gal galima pritaikyti koda, kad visiems butu galima taikyti hover? */
+.icon-search1 {
+  color: #fff;
+  vertical-align: -1px;
+  /* vertikaliai 1px zemyn */
+}
+
+/*https://www.w3schools.com/howto/howto_js_dropdown.asp*/
+.lang a {
+  vertical-align: -2px;
+}
+
+/* 1 SECTION END: NAVIGATION MENIU */
+/* 2 SECTION START: CAROUSEL */
+/*https://owlcarousel2.github.io/OwlCarousel2/docs/started-installation.html*/
+.carousel {
+  background-color: #2a2d2c;
+}
+
+.owl-carousel .owl-stage-outer {
+  -webkit-transform: translateY(107px);
+  -ms-transform: translateY(107px);
+  transform: translateY(107px);
+}
+
+/* nuotrauka kazkodel per maza???? */
+.carousel .photo {
+  background-size: cover;
+  background-position: center;
+}
+
+.photo.first {
+  background-image: url("../images/big_towel-compressor.jpg");
+}
+
+.photo.second {
+  background-image: url("../images/big_mask-compressor.jpg");
+}
+
+.special-container {
+  max-width: 1186px;
+  margin: 0 auto;
+  height: 612px;
+  /*?????? kaip sitas sprendimas? 715px, 100vh*/
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.special-container.second {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.first .content {
+  padding-left: 73px;
+  max-width: 623px;
+}
+
+.second .content {
+  padding-left: 40px;
+  max-width: 623px;
+}
+
+.carousel h3 {
+  color: #c0b7af;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Karla", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  letter-spacing: 3px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.second h3 {
+  color: #c0b7af;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Karla", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  letter-spacing: 3px;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.carousel h4 {
+  color: #2d2a27;
+  font-family: "Marcellus", Georgia, Times, "Century Schoolbook L", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.9rem;
+  letter-spacing: 1px;
+  padding-top: 25px;
+}
+
+.second h4 {
+  color: white;
+}
+
+.button {
+  padding: 16px 42px;
+  /* tipo 11 ir 42*/
+  background-color: #2d2a27;
+  border: #6a6560;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Karla", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-size: 0.6875rem;
+  position: absolute;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+/* button colors: */
+.first a {
+  margin-left: 73px;
+  bottom: 160px;
+}
+
+.first a:hover {
+  background: #b8a48d;
+  color: #f7f4f0;
+}
+
+.atitraukimas {
+  margin-bottom: 60px;
+}
+
+.second a {
+  -webkit-transform: translateX(-110%);
+  -ms-transform: translateX(-110%);
+  transform: translateX(-110%);
+  bottom: 190px;
+}
+
+.second a:hover {
+  background: #fff;
+  color: black;
+}
+
+/* 2 SECTION END: CAROUSEL */
+/* 3 SECTION START: overlay */
+.overlay {
+  height: 107px;
+  background-color: #f7f3f0;
+  max-width: 1280px;
+}
+
+/* 3 SECTION END: overlay */
+/* 4 SECTION START: ABOUT US */
+.about-us {
+  background-image: url("../images/wave-background-compressor.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-us .container {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+/*centruojam turini: */
+.content-about-us {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 163px;
+  margin-bottom: 202px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  max-width: 450px;
+  text-align: center;
+}
+
+h1 {
+  color: #c0b7af;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Karla", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  letter-spacing: 3px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+h2 {
+  color: #2d2a27;
+  font-family: "Marcellus", Georgia, Times, "Century Schoolbook L", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7rem;
+  letter-spacing: 3px;
+  padding-bottom: 35px;
+  padding-top: 35px;
+}
+
+.about-us p {
+  color: #6a6560;
+  font-size: 0.8rem;
+  /*atrodo per didelis sriftas, visai kitoks. turejo buti 16px, tai sumazinau*/
+  letter-spacing: 3px;
+  line-height: 28px;
+  padding-bottom: 35px;
+}
+
+.about-us .button {
+  letter-spacing: 2px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.about-us a:hover, .voucher a:hover {
+  border: 1px solid #d8d3d2;
+  background-color: #f7f4f0;
+  color: #2d2a27;
+}
+
+/* 4 SECTION END: ABOUT US */
+/* 5 SECTION START: intro to services */
+.intro-to-service {
+  background-color: #fff;
+}
+
+.intro-to-service .container {
+  padding-top: 125px;
+  padding-bottom: 70px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.antraste {
+  width: 430.844px;
+}
+
+.antraste h4 {
+  color: #2d2a27;
+  font-family: "Marcellus", Georgia, Times, "Century Schoolbook L", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 34px;
+}
+
+.intro-to-service a {
+  border: 1px solid #e0dddd;
+  background-color: rgba(0, 0, 0, 0);
+  color: #2d2a27;
+  letter-spacing: 2px;
+  font-weight: 700;
+  position: static;
+}
+
+.intro-to-service a:hover {
+  color: #fff;
+  background-color: #2d2a27;
+  border-color: #4a4744;
+}
+
+/* 5 SECTION END: intro to services */
+/* 6 SECTION START: services */
+.paslaugos .container {
+  padding-bottom: 110px;
+  /* atemiau 40px, nes nuotraukos i apacia turi 40px margin*/
+}
+
+.spa {
+  width: 29.8568%;
+  margin-bottom: 40px;
+  position: relative;
+  /* uzdedam ant nuotraukos teksta */
+  text-align: center;
+  color: white;
+}
+
+.service-photos {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* ant nuotraukos sucentruojam teksta */
+.centered {
+  position: absolute;
+  width: 100%;
+  /* jejeje tekstas viduj nepersikelia i kita eilute ## /* max-width: 250px; KODEL PEREINA I KITA EILUTE?*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.overlayw3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.spa:hover .overlayw3 {
+  background-color: rgba(45, 42, 39, 0.5);
+}
+
+.paslaugos a {
+  font-family: "Karla", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+/* 6 SECTION END: services */
+/* 7 SECTION START: VOUCHERS*/
+.voucher {
+  background-image: url("../images/gultas-compressor.jpg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.voucher .container {
+  min-height: 725px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.voucher-content {
+  max-width: 400px;
+  position: relative;
+  text-align: center;
+}
+
+.voucher h3 {
+  color: #2d2a27;
+  font-family: "Marcellus", Georgia, Times, "Century Schoolbook L", serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #6a6560;
+  font-size: 1.125rem;
+}
+
+.voucher-content h4 {
+  color: #c0b7af;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Karla", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  letter-spacing: 3px;
+  font-style: normal;
+  font-weight: 400;
+  display: inline-block;
+  font-size: 1.75rem;
+  line-height: 44px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #2d2a27;
+}
+
+.voucher .button {
+  margin-bottom: 240px;
+  letter-spacing: 2px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* 7 SECTION END: VOUCHERS */
+/* 8 SECTION START: NEWS */
+.news {
+  background-color: #f7f4f0;
+}
+
+.news .container {
+  padding-top: 135px;
+  padding-bottom: 125px;
+}
+
+.news h5 {
+  color: #2d2a27;
+  font-family: "Marcellus", Georgia, Times, "Century Schoolbook L", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+figure {
+  position: relative;
+  margin: 0;
+}
+
+.top-right {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.top-right a, .news footer a {
+  font-family: "Karla", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  text-decoration: none;
+  background-color: #2d2a27;
+  text-transform: uppercase;
+}
+
+.top-right a {
+  padding: 5px 15px;
+  margin-bottom: 2px;
+  margin-right: 2px;
+  color: #f7f4f0;
+  font-size: .75rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 18px;
+}
+
+.top-right a:hover {
+  background: #a1886b;
+  color: #f7f4f0;
+}
+
+.news-columns {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.one-news-column {
+  width: 30%;
+  /*30.8510*/
+}
+
+.bottom-column {
+  padding: 25px;
+  background-color: #fff;
+}
+
+.bottom-column h6 {
+  color: #2d2a27;
+  font-family: "Marcellus", Georgia, Times, "Century Schoolbook L", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 24px;
+}
+
+.date-published {
+  margin-top: 5px;
+}
+
+.date-published h6 {
+  color: #c0b7af;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Karla", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  letter-spacing: 3px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 18px;
+  letter-spacing: 2px;
+}
+
+.paragraph {
+  margin-top: 15px;
+}
+
+.paragraph p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 26px;
+  font-weight: 300;
+}
+
+.news footer {
+  margin-top: 17px;
+}
+
+.news footer a {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 16px;
+  color: #2d2a27;
+  background-color: transparent;
+}
+
+.news footer a:hover {
+  color: #b8a48d;
+}
+
+.three-dots {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 25px;
+  font-size: 10px;
+  color: #d8d3d2;
+}
+
+.three-dots i {
+  padding: 3px;
+}
+
+.three-dots i:hover {
+  color: #b7a48e;
+}
+
+/* kaip padaryti, kad ir liktu hover spalvos, kai tas langas aktyvus????? */
+/* 8 SECTION END: NEWS */
+/* 9 SECTION START: footer */
+.end-footer {
+  background-color: #1f1e1d;
+}
+
+.footer-content {
+  padding: 120px 20px 25px;
+  text-align: center;
+}
+
+.end-footer img {
+  display: inline;
+  width: 100%;
+}
+
+.address {
+  margin-bottom: 40px;
+}
+
+.end-footer .logo2 {
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 7%;
+}
+
+.end-footer h4 {
+  color: #c0b7af;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Karla", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  letter-spacing: 3px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: .875rem;
+  line-height: 34px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.end-footer a {
+  color: #c0b7af;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Karla", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  letter-spacing: 3px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: .875rem;
+  line-height: 24px;
+}
+
+.icon-social {
+  margin-bottom: 20px;
+}
+
+.icon-social a {
+  color: #fff;
+}
+
+.icon-social ul {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.margin i {
+  margin-right: 20px;
+  font-size: 19px;
+}
+
+.icon-social i:hover {
+  color: #e7d2b9;
+}
+
+.rights {
+  margin-top: 100px;
+}
+
+.rights p {
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1rem;
+  line-height: 26px;
+  display: inline;
+}
+
+/* 9 SECTION END: footer */
