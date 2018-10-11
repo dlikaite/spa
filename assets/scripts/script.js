@@ -1,8 +1,6 @@
 console.log("Pavyko!")
 
-
-// https://codepen.io/malZiiirA/pen/cbfED
-// 
+// Animated Navigation Bar
 $(function(){
  var shrinkHeader = 100;
   $(window).scroll(function() {
@@ -19,7 +17,7 @@ function getCurrentScroll() {
     }
 });
 
-// PIRMA KARUSELE
+// FIRST CAROUSEL
 $('.kar').owlCarousel({
     loop:true,
     margin:10,
@@ -35,7 +33,7 @@ $('.kar').owlCarousel({
     autoplayHoverPause:false
 });
 
-// ANTRA KARUSELE
+// SECOND CAROUSEL IN THE NEWS SECTION
 $('.kar2').owlCarousel({
     loop:true,
     margin:10,
@@ -48,22 +46,20 @@ $('.kar2').owlCarousel({
     }
 });
 
-// https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-// When the user scrolls down 100px from the top of the document, show the button
-window.onscroll = function() {
-    scrollFunction();
-}
 
-function scrollFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        document.getElementById("myBtn").style.display = "block";
+// FIXED Scroll Back To Top Button
+// When the user scrolls down 100px from the top of the document, fade in the button
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 100){
+        $('.myBtn').fadeIn(150);
     } else {
-        document.getElementById("myBtn").style.display = "none";
+        $('.myBtn').fadeOut(150);
     }
-}
+});
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
+$('.myBtn').click(function(){
+    $('body, html').animate({
+        scrollTop: 0
+    }, 500);
+});
