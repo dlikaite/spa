@@ -40,7 +40,7 @@ select, input, textarea {
     padding: 9px 15px;
     border: 1px solid rgb(216, 211, 210);
     &:focus{
-    	outline: #b8a48d; // NEPATAMSEJA??
+    	outline-color: #b8a48d;
     }
 }
 
@@ -53,7 +53,7 @@ select, input, textarea {
 }
 
 .call_to_action input{
-	max-width: 190px;
+	width: initial;
 	&:hover{
 		background: #b8a48d;
   		color: #f7f4f0; 
