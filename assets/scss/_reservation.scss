@@ -1,0 +1,63 @@
+/* CONTACT US FORM: START */
+.reservation {
+	background-color: #f7f4f0;
+}
+
+.reservation .container {
+	padding-top: 270px;
+	padding-bottom: 210px;
+	justify-content: center;
+}
+
+.reservation h3{
+	@include uppercase-title;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.reservation h4 {
+	@include big-title;
+	font-size: 2.25rem;
+	line-height: 44px;
+	margin-bottom: 45px;
+	text-align: center;
+}
+
+.call_to_action, .one_form {
+	padding-bottom: 10px;
+	margin-right: 6px;
+	margin-left: 6px;
+}
+
+label {
+	padding-bottom: 6px;
+	@extend %news_click;
+  	@include read_more;
+}
+
+select, input, textarea {
+    width: 100%;
+    padding: 9px 15px;
+    border: 1px solid rgb(216, 211, 210);
+    &:focus{
+    	outline: #b8a48d; // NEPATAMSEJA??
+    }
+}
+
+.one_form span{
+	color: #b8a48d;
+}
+
+.call_to_action{
+	padding-top: 20px;
+}
+
+.call_to_action input{
+	max-width: 190px;
+	&:hover{
+		background: #b8a48d;
+  		color: #f7f4f0; 
+	}
+}
+
+/* CONTACT US FORM: END */

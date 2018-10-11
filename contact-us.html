@@ -44,11 +44,69 @@
 	</header>
 	<!-- HEADER END --> 
 
-	<!-- CONTACT US FORM START -->
+	<!-- CONTACT US FORM: START -->
+	<section class="reservation">
+		<div class="container flexinam">
+			<div class="content">
+				<div>
+					<h3>aušros spa namai</h3>
+				</div>
+				<div>
+					<h4>Dovanų kupono užsakymas</h4>
+				</div>
+				<div class="contact-form">
+					<form class="reservation_form" method="GET" enctype="multipart/form-data">
+						<div class="one_form">
+							<label for="firstname">Jūsų Vardas<span> *</span></label>
+							<br>
+							<input type="text" id="firstname" name="firstname" value="" required>
+						</div>
+						<div class="one_form">
+							<label for="email">el. paštas<span> *</span></label>
+							<br>
+							<input type="email" id="email" name="email" value="" required>
+						</div>						
+						<div class="one_form">
+							<label for="telephone">Tel. nr.<span> *</span></label>
+							<br>
+							<input type="text" id="telephone" name="telephone" value="" required>
+						</div>
+						<div class="one_form">
+							<label for="coupon">Kupono suma:<span> *</span></label>
+							<br>
+							<input type="number" id="coupon" name="coupon" value="" required>
+						</div>
+						<div class="one_form">
+							<label for="coupon">Procedūra:<span> *</span></label>
+							<br>
+							<select class="options" required>
+								<option>Pasirinkite</option>
+								<option value="---">---</option>
+								<option value="massage">Masažas</option>
+								<option value="spa_ritual">Spa ritualai</option>
+								<option value="spa">Spa procedūra dviem</option>
+								<option value="spa_for_couples">Manikiūras</option>
+								<option value="depilation">Depiliacija</option>
+								<option value="treatments_for_men">Spa procedūra vyrui</option>
+							</select>
+							<!-- <input type="number" id="coupon" name="coupon" value="" required> -->
+						</div>
+						<div class="one_form message">
+							<label for="coupon">Jūsų užklausa<span> *</span></label>
+							<br>
+							<textarea rows="10"></textarea>
+						</div>		
+					</form>
+				</div>
+				<div class="call_to_action">
+					<input type="submit" class='button dark-button' name="new_order" value="užsakyti">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- CONTACT US FORM: END --> 
 
-	<!-- CONTACT US FORM END --> 
-
-	<!-- SECTION START: footer-->
+	<!-- FOOTER: START -->
 	<footer class="end-footer">
 		<div class="container">
 			<div class="footer-content">
@@ -92,7 +150,9 @@
 			</div>
 		</div>
 	</footer>
-	<!-- 7 SECTION END: footer-->
+	<!-- FOOTER: END -->
+	<script src="assets/scripts/jquery.js"></script>
+	<script src="owlcarousel/dist/owl.carousel.min.js"></script>
 	<script src="assets/scripts/script.js"></script>
 </body>
 </html>
