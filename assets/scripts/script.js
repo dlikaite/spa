@@ -19,8 +19,8 @@ function getCurrentScroll() {
     }
 });
 
-// KARUSELE
-$('.owl-carousel').owlCarousel({
+// PIRMA KARUSELE
+$('.kar').owlCarousel({
     loop:true,
     margin:10,
     nav:false,
@@ -32,9 +32,21 @@ $('.owl-carousel').owlCarousel({
     },
     autoplay:true,
     autoplayTimeout:4000, // kaip padaryti letesni transition?
-    autoplayHoverPause:true
+    autoplayHoverPause:false
 });
 
+// ANTRA KARUSELE
+$('.kar2').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    dots:true, 
+    responsive:{
+        0:{
+            items:3
+        }
+    }
+});
 
 // https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 // When the user scrolls down 100px from the top of the document, show the button

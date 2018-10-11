@@ -568,6 +568,13 @@ h2 {
 
 /* 7 SECTION END: VOUCHERS */
 /* 8 SECTION START: NEWS */
+.top-column .top-right a, .bottom-column footer a, label {
+  font-family: "Karla", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  text-decoration: none;
+  background-color: #2d2a27;
+  text-transform: uppercase;
+}
+
 .news {
   background-color: #f7f4f0;
 }
@@ -588,25 +595,28 @@ h2 {
   margin-bottom: 55px;
 }
 
-figure {
+.news .kar2 .owl-stage-outer {
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.news .one-news-column {
+  width: 90%;
+}
+
+.top-column figure {
   position: relative;
   margin: 0;
 }
 
-.top-right {
+.top-column .top-right {
   position: absolute;
   top: 15px;
   left: 15px;
 }
 
-.top-right a, .news footer a {
-  font-family: "Karla", Arial, Helvetica, "Nimbus Sans L", sans-serif;
-  text-decoration: none;
-  background-color: #2d2a27;
-  text-transform: uppercase;
-}
-
-.top-right a {
+.top-column .top-right a {
   padding: 5px 15px;
   margin-bottom: 2px;
   margin-right: 2px;
@@ -617,22 +627,9 @@ figure {
   line-height: 18px;
 }
 
-.top-right a:hover {
+.top-column .top-right a:hover {
   background: #a1886b;
   color: #f7f4f0;
-}
-
-.news-columns {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.one-news-column {
-  width: 30%;
-  /*30.8510*/
 }
 
 .bottom-column {
@@ -649,11 +646,11 @@ figure {
   line-height: 24px;
 }
 
-.date-published {
+.bottom-column .date-published {
   margin-top: 5px;
 }
 
-.date-published h6 {
+.bottom-column .date-published h6 {
   color: #c0b7af;
   font-size: 1rem;
   text-transform: uppercase;
@@ -666,22 +663,22 @@ figure {
   letter-spacing: 2px;
 }
 
-.paragraph {
+.bottom-column .paragraph {
   margin-top: 15px;
 }
 
-.paragraph p {
+.bottom-column .paragraph p {
   margin: 0;
   font-size: 1rem;
   line-height: 26px;
   font-weight: 300;
 }
 
-.news footer {
+.bottom-column footer {
   margin-top: 17px;
 }
 
-.news footer a {
+.bottom-column footer a {
   font-size: 0.6875rem;
   font-weight: 700;
   letter-spacing: 1px;
@@ -690,28 +687,25 @@ figure {
   background-color: transparent;
 }
 
-.news footer a:hover {
+.bottom-column footer a:hover {
   color: #b8a48d;
 }
 
-.three-dots {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-top: 25px;
-  font-size: 10px;
-  color: #d8d3d2;
+.owl-theme .owl-dots .owl-dot span {
+  -webkit-transition: opacity .2s ease;
+  -o-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+  background-color: #d8d3d2;
 }
 
-.three-dots i {
-  padding: 3px;
+.owl-theme .owl-dots .owl-dot:focus {
+  outline: none;
 }
 
-.three-dots i:hover {
-  color: #b7a48e;
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #b7a48e;
 }
 
-/* kaip padaryti, kad ir liktu hover spalvos, kai tas langas aktyvus????? */
 /* 8 SECTION END: NEWS */
 /* 9 SECTION START: footer */
 .end-footer {
@@ -802,3 +796,83 @@ figure {
 }
 
 /* 9 SECTION END: footer */
+/* CONTACT US FORM: START */
+.reservation {
+  background-color: #f7f4f0;
+}
+
+.reservation .container {
+  padding-top: 270px;
+  padding-bottom: 210px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.reservation h3 {
+  color: #c0b7af;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Karla", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+  letter-spacing: 3px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.reservation h4 {
+  color: #2d2a27;
+  font-family: "Marcellus", Georgia, Times, "Century Schoolbook L", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 44px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.call_to_action, .one_form {
+  padding-bottom: 10px;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+label {
+  padding-bottom: 6px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 16px;
+  color: #2d2a27;
+  background-color: transparent;
+}
+
+select, input, textarea {
+  width: 100%;
+  padding: 9px 15px;
+  border: 1px solid #d8d3d2;
+}
+
+select:focus, input:focus, textarea:focus {
+  outline-color: #b8a48d;
+}
+
+.one_form span {
+  color: #b8a48d;
+}
+
+.call_to_action {
+  padding-top: 20px;
+}
+
+.call_to_action input {
+  width: initial;
+}
+
+.call_to_action input:hover {
+  background: #b8a48d;
+  color: #f7f4f0;
+}
+
+/* CONTACT US FORM: END */

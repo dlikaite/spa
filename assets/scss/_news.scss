@@ -1,33 +1,5 @@
 /* 8 SECTION START: NEWS */
 
-.news {
-  background-color: #f7f4f0;
-}
-
-.news .container {
-  padding-top: 135px;
-  padding-bottom: 125px;
-}
-
-.news h5 {
-  @include big-title;
-  font-size: 2.25rem;
-  line-height: 44px;
-  text-align: center;
-  margin-bottom: 55px;
-}
-
-figure {
-  position: relative;
-  margin: 0;
-}
-
-.top-right {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-}
-
 %news_click {
   font-family: $karla;
   text-decoration: none;
@@ -35,72 +7,7 @@ figure {
   text-transform: uppercase;
 }
 
-.top-right a {
-  @extend %news_click;
-  padding: 5px 15px;
-  margin-bottom: 2px;
-  margin-right: 2px;
-  color: #f7f4f0;
-  font-size: .75rem;
-  font-weight: 400;
-  letter-spacing: 2px;
-  line-height: 18px;
-
-}
-
-.top-right a:hover {
-  background: #a1886b;
-  color: #f7f4f0;
-}
-
-.news-columns {
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.one-news-column {
-  width: 30%; /*30.8510*/
-}
-
-.bottom-column {
-  padding: 25px;
-  background-color: #fff;
-}
-
-.bottom-column h6 {
-  @include big-title;
-  font-size: 1.125rem;
-  line-height: 24px;
-}
-
-.date-published {
-  margin-top: 5px;
-}
-
-.date-published h6 {
-  @include uppercase-title;
-  font-size: 0.75rem;
-  line-height: 18px;
-  letter-spacing: 2px;
-}
-
-.paragraph {
-  margin-top: 15px;
-}
-
-.paragraph p {
-  margin: 0;
-  font-size: 1rem;
-  line-height: 26px;
-  font-weight: 300;
-}
-
-.news footer {
-  margin-top: 17px;
-}
-
-.news footer a {
-  @extend %news_click;
+@mixin read_more{
   font-size: 0.6875rem;
   font-weight: 700;
   letter-spacing: 1px;
@@ -109,25 +16,119 @@ figure {
   background-color: transparent;
 }
 
-.news footer a:hover {
-  color: #b8a48d;
+.news {
+  background-color: #f7f4f0;
+
+  .container {
+    padding-top: 135px;
+    padding-bottom: 125px;
+  }
+
+  h5 {
+    @include big-title;
+    font-size: 2.25rem;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  .kar2 .owl-stage-outer {
+    transform: translateY(-10px);
+  }
+
+  .one-news-column {
+    width: 90%;
+  }
 }
 
-.three-dots {
-  justify-content: center;
-  padding-top: 25px;
-  font-size: 10px;
-  color: #d8d3d2;
+.top-column {
+
+  figure {
+    position: relative;
+    margin: 0;
+  }
+
+  .top-right {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    a {
+      @extend %news_click;
+      padding: 5px 15px;
+      margin-bottom: 2px;
+      margin-right: 2px;
+      color: #f7f4f0;
+      font-size: .75rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+      line-height: 18px;
+
+      &:hover {
+        background: #a1886b;
+        color: #f7f4f0;
+      }  
+    }  
+  }
 }
 
-.three-dots i {
-  padding: 3px;
+
+.bottom-column {
+  padding: 25px;
+  background-color: #fff;
+
+  h6 {
+    @include big-title;
+    font-size: 1.125rem;
+    line-height: 24px;
+  }
+
+  .date-published {
+    margin-top: 5px;
+    h6 {
+      @include uppercase-title;
+      font-size: 0.75rem;
+      line-height: 18px;
+      letter-spacing: 2px;
+    }  
+  }
+
+  .paragraph {
+    margin-top: 15px;
+    p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 26px;
+      font-weight: 300;
+    }
+  }
+
+  footer {
+    margin-top: 17px;
+
+    a {
+      @extend %news_click;
+      @include read_more;
+
+      &:hover {
+        color: #b8a48d;
+      }
+    }
+  }
 }
 
-.three-dots i:hover {
-  color: #b7a48e;
-}
 
-/* kaip padaryti, kad ir liktu hover spalvos, kai tas langas aktyvus????? */
+.owl-theme .owl-dots .owl-dot {
+  span {
+    transition: opacity .2s ease;
+    background-color: #d8d3d2;
+  }
+  &:focus {
+    outline: none;
+  }
+  &.active span, &:hover span {
+    background-color: #b7a48e;
+  }
+}
 
 /* 8 SECTION END: NEWS */
