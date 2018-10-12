@@ -5,60 +5,51 @@
   position: fixed;
   width: 100%;
   z-index: 1000;
+
+  .container {
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      padding: 16.609px 15px 16.625px 35px;
+      max-width: 155px;
+    }
+  }
+
+  &.shrink{
+    .container {
+      height: 73px;
+    }
+    .logo {
+      padding: 15px 15px 15px 35px;
+      max-width: 105px;
+    }
+  }
 }
 
-.float-navigation.shrink .container {
-  height: 73px;
-}
-
-/*https://codepen.io/malZiiirA/pen/cbfED*/
-
-.float-navigation.shrink .logo {
-  padding: 15px 15px 15px 35px; // 
-  max-width: 105px;
-}
-
-.float-navigation .container {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  padding: 16.609px 15px 16.625px 35px;
-  max-width: 155px;
-}
 
 .meniu {
   align-items: center;
-}
 
-.meniu a {
-  color: #fff;
-  font-size: 0.75rem;
-  font-family: $karla;
-  letter-spacing: 2px; /*cia gal irgi reikia reliatyvaus skaiciaus?*/
-  padding: 10px;
-}
+  a {
+    color: #fff;
+    font-size: 0.75rem;
+    font-family: $karla;
+    letter-spacing: 2px;
+    padding: 10px;
+    &:hover, &.selected, span:hover {
+      color: #e8d2b8;
+    }
+  }
 
-/* kazkaip kitaip reiketu selectinti!!! */
-.unique a {
-  color: #e8d2b8;
-}
+  .lang a {
+    vertical-align: -2px;
+  }
 
-.meniu a:hover, span:hover {
-  color: #e8d2b8;
-}
-
-/* kazkaip gal galima pritaikyti koda, kad visiems butu galima taikyti hover? */
-.icon-search1 {
-  color: #fff;
-  vertical-align: -1px; /* vertikaliai 1px zemyn */
-}
-
-
-/*https://www.w3schools.com/howto/howto_js_dropdown.asp*/
-.lang a {
-  vertical-align: -2px;
+  .icon-search1 {
+    color: #fff;
+    vertical-align: -1px;
+  }  
 }
 
 /* 1 SECTION END: NAVIGATION MENIU */

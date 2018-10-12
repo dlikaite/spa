@@ -117,16 +117,6 @@ p {
   z-index: 1000;
 }
 
-.float-navigation.shrink .container {
-  height: 73px;
-}
-
-/*https://codepen.io/malZiiirA/pen/cbfED*/
-.float-navigation.shrink .logo {
-  padding: 15px 15px 15px 35px;
-  max-width: 105px;
-}
-
 .float-navigation .container {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -136,9 +126,18 @@ p {
   align-items: center;
 }
 
-.logo {
+.float-navigation .container .logo {
   padding: 16.609px 15px 16.625px 35px;
   max-width: 155px;
+}
+
+.float-navigation.shrink .container {
+  height: 73px;
+}
+
+.float-navigation.shrink .logo {
+  padding: 15px 15px 15px 35px;
+  max-width: 105px;
 }
 
 .meniu {
@@ -152,29 +151,20 @@ p {
   font-size: 0.75rem;
   font-family: "Karla", Arial, Helvetica, "Nimbus Sans L", sans-serif;
   letter-spacing: 2px;
-  /*cia gal irgi reikia reliatyvaus skaiciaus?*/
   padding: 10px;
 }
 
-/* kazkaip kitaip reiketu selectinti!!! */
-.unique a {
+.meniu a:hover, .meniu a.selected, .meniu a span:hover {
   color: #e8d2b8;
 }
 
-.meniu a:hover, span:hover {
-  color: #e8d2b8;
+.meniu .lang a {
+  vertical-align: -2px;
 }
 
-/* kazkaip gal galima pritaikyti koda, kad visiems butu galima taikyti hover? */
-.icon-search1 {
+.meniu .icon-search1 {
   color: #fff;
   vertical-align: -1px;
-  /* vertikaliai 1px zemyn */
-}
-
-/*https://www.w3schools.com/howto/howto_js_dropdown.asp*/
-.lang a {
-  vertical-align: -2px;
 }
 
 /* 1 SECTION END: NAVIGATION MENIU */

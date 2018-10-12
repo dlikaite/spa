@@ -63,3 +63,12 @@ $('.myBtn').click(function(){
         scrollTop: 0
     }, 500);
 });
+
+// Keep color of an anture when selected
+$('.keep-color').on('click', function(){
+    $('.keep-color').removeClass('selected');
+    $(this).addClass('selected');
+});
+
+
+
