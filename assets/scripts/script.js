@@ -74,11 +74,12 @@ $(document).ready(function(){
     });
 });
 
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
+// BURGER tClassList toggle
+var burgeris = document.querySelectorAll(".icon_burger");
+var meniu = document.querySelectorAll(".topnav");
+burgeris[0].addEventListener("click", function(){
+    meniu[0].classList.toggle("responsive");
+})
+
+
+

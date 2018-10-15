@@ -6,9 +6,11 @@
   width: 100%;
   z-index: 1000;
 
+
   .container {
     justify-content: space-between;
     align-items: center;
+    padding-right: 35px;
 
     .logo {
       padding: 16.609px 15px 16.625px 35px;
@@ -36,23 +38,17 @@
     font-family: $karla;
     letter-spacing: 2px;
     padding: 10px;
+
     &:hover, &.selected, span:hover {
       color: #e8d2b8;
     }
-  }
-
-  .lang a {
-    vertical-align: -2px;
-  }
-
-  .icon-search1 {
-    color: #fff;
-    vertical-align: -1px;
+    
+    &.icon_burger {
+      display: none;
+    }
   }
 }
 
-.icon_burger i {
-  display: none;  // KODEL NEVEIKIA?
-}
+
 
 /* 1 SECTION END: NAVIGATION MENIU */

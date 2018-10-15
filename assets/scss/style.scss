@@ -97,36 +97,35 @@ p {
 
 // NAVIGATION
 
-@media screen and (max-width: 600px) {
-  .topnav a {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
+@media screen and (max-width: 800px) {
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
+  .float-navigation .meniu {
+    position: relative;
     display: block;
-    text-align: left;
+
+    a.icon_burger {
+      display: block;
+    }
+  }
+
+  .topnav {
+    display: none;
+  }
+
+  .topnav.responsive {
+    position: absolute;
+    display: block;
+    width: 150px;
+    right: 0;
+    background-color: $baseColor;
+    text-align: right;
+    padding-bottom: 15px;
   }
 }
 
 // CAROUSEL SECTION
 
 @media all and (max-width: 600px) {
-  .special-container {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
   .first .content {
     padding-left: 20px;
     max-width: 280px;
@@ -230,4 +229,10 @@ p {
   }
 }
 
-  
+// RESERVATIONS
+
+@media all and (max-width: 600px) {
+  .reservation .container {
+    margin: 0 20px 0px 20px;
+  }
+} 
