@@ -3,12 +3,18 @@
   background-image: url("../images/wave-background-compressor.jpg");
   background-size: cover;
   background-position: center;
+
+  .container {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
 }
 
-.about-us .container {
-  justify-content: center;
-  align-items: center;
-  position: relative;
+%hover {
+  border: 1px solid rgb(216, 211, 210);
+  background-color: rgb(247, 244, 240);
+  color: rgb(45, 42, 39);
 }
 
 /*centruojam turini: */
@@ -21,43 +27,36 @@
   padding-right: 20px;
   max-width: 450px;
   text-align: center;
-}
 
-h1 {
-  @include uppercase-title;
-  line-height: 28px;
-}
+  h1 {
+    @include uppercase-title;
+    line-height: 28px;
+  }
 
-h2 {
-  @include big-title;
-  font-size: 1.7rem;
-  letter-spacing: 3px;
-  padding-bottom: 35px;
-  padding-top: 35px; 
-}
+  h2 {
+    @include big-title;
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+    padding-bottom: 35px;
+    padding-top: 35px; 
+  }
 
-.about-us p {
-  color: rgb(106, 101, 96);
-  font-size: 0.8rem; /*atrodo per didelis sriftas, visai kitoks. turejo buti 16px, tai sumazinau*/
-  letter-spacing: 3px;
-  line-height: 28px;
-  padding-bottom: 35px;
-}
+  p {
+    color: rgb(106, 101, 96);
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 28px;
+    padding-bottom: 35px;
+  }
 
-// SUTAMPA SU APACIOJE ESANCIU NET IR SU CENTRAVIMU.
-.about-us .button {
-  letter-spacing: 2px;
-  transform: translateX(-50%);
-}
+  .button {
+    letter-spacing: 2px;
+    transform: translateX(-50%);
+  }
 
-%hover {
-  border: 1px solid rgb(216, 211, 210);
-  background-color: rgb(247, 244, 240);
-  color: rgb(45, 42, 39);
-}
-
-.about-us a:hover {
-  @extend %hover;
+  a:hover {
+    @extend %hover;
+  }
 }
 
 /* 4 SECTION END: ABOUT US */

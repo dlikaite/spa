@@ -27,7 +27,6 @@
   }
 }
 
-
 .meniu {
   align-items: center;
 
@@ -49,7 +48,11 @@
   .icon-search1 {
     color: #fff;
     vertical-align: -1px;
-  }  
+  }
+}
+
+.icon_burger i {
+  display: none;  // KODEL NEVEIKIA?
 }
 
 /* 1 SECTION END: NAVIGATION MENIU */

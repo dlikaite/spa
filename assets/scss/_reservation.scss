@@ -1,38 +1,60 @@
 /* CONTACT US FORM: START */
-.reservation {
-	background-color: #f7f4f0;
-}
-
-.reservation .container {
-	padding-top: 270px;
-	padding-bottom: 210px;
-	justify-content: center;
-}
-
-.reservation h3{
-	@include uppercase-title;
-	margin-bottom: 5px;
-	text-align: center;
-}
-
-.reservation h4 {
-	@include big-title;
-	font-size: 2.25rem;
-	line-height: 44px;
-	margin-bottom: 45px;
-	text-align: center;
-}
-
-.call_to_action, .one_form {
+%equal_margins {
 	padding-bottom: 10px;
 	margin-right: 6px;
 	margin-left: 6px;
 }
 
-label {
-	padding-bottom: 6px;
-	@extend %news_click;
-  	@include read_more;
+.reservation {
+	background-color: #f7f4f0;
+
+	.container {
+		padding-top: 270px;
+		padding-bottom: 210px;
+		justify-content: center;
+
+		h3{
+			@include uppercase-title;
+			margin-bottom: 5px;
+			text-align: center;
+		}
+
+		h4 {
+			@include big-title;
+			font-size: 2.25rem;
+			line-height: 44px;
+			margin-bottom: 45px;
+			text-align: center;
+		}
+
+		.call_to_action {
+			@extend %equal_margins;
+			padding-top: 20px;
+
+			input{
+				width: initial;
+				&:hover{
+					background: #b8a48d;
+			  		color: #f7f4f0; 
+				}
+			}	
+		}
+	}
+}
+
+
+.one_form {
+	@extend %equal_margins;
+
+	label {
+		padding-bottom: 6px;
+		@extend %news_click;
+	  	@include read_more;
+
+	  	span{
+			color: #b8a48d;
+		}
+	}
 }
 
 select, input, textarea {
@@ -42,22 +64,6 @@ select, input, textarea {
     &:focus{
     	outline-color: #b8a48d;
     }
-}
-
-.one_form span{
-	color: #b8a48d;
-}
-
-.call_to_action{
-	padding-top: 20px;
-}
-
-.call_to_action input{
-	width: initial;
-	&:hover{
-		background: #b8a48d;
-  		color: #f7f4f0; 
-	}
 }
 
 /* CONTACT US FORM: END */

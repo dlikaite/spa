@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="lt"> 
+<html lang="lt"> <!-- <?php language_attributes(); ?> -->
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1"> 
@@ -24,54 +24,45 @@
 		<!-- HEADER START-->
 		<header class="float-navigation"> <!-- zalias --> 
 			<div class="container flexinam">
-
 				<div class="logo">
 					<a href="#">
 						<img src="assets/images/logo-spa-compressor.png" alt="Aušros spa namai">
 					</a>
 				</div>
-
 				<nav class="meniu flexinam">
-					<ul class="flexinam">
+					<ul class="flexinam topnav" id="myTopnav">
 						<li><a href="#" class="keep-color">Pradžia</a></li>
 						<li><a href="#us" class="keep-color">Apie mus</a></li>
 						<li><a href="#our_news" class="keep-color">Naujienos</a></li>
 						<li><a href="#our_services" class="keep-color">Paslaugos</a></li>
 						<li><a href="#coupons" class="keep-color">Dovanų kuponai</a></li>
 						<li><a href="#contact_us" class="keep-color">Kontaktai</a></li>
+						<li><a href="javascript:void(0);" class="icon_burger" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
 					</ul>
-					<ul class="lang">
-						<!-- kaip cia padaryti, kad issoktu EN?? -->
-						<!-- https://www.w3schools.com/howto/howto_js_dropdown.asp -->
-						<li>
-							<a href="#LT">
-								<img src="assets/images/lt.png">
-							</a>
-						</li>
-					</ul>
-					<div class="search">
-						<a href="#search"><span class="icon-search1"></span></a>
-					</div>
 				</nav>
 			</div>
 		</header>
 		<!-- HEADER END --> 
 		<!-- 2 SECTION START-->
 		<section class="carousel">
-			<div class="owl-carousel kar owl-theme">
+			<div class="owl-carousel karusele1 owl-theme">
 				<div class="special-container photo flexinam first">
 					<div class="content">
 						<h3>Sveiki atvykę į aušros spa namus!</h3>
 						<h4>Mūsų svetainėje galite surasti visas teikiamas paslaugas ir jų kainas</h4>
+						<div>
+							<a class='button' href='#our_services'>Paslaugos</a>
+						</div>
 					</div>
-					<a class='button' href='nowhere.html'>Paslaugos</a>
 				</div>
 				<div class="special-container photo flexinam second">
-					<div class="content atitraukimas">
+					<div class="content">
 						<h3>Sveiki atvykę į aušros spa namus!</h3>
 						<h4>Pas mus galite įsigyti dovanų kuponus visoms mūsų paslaugoms internetu!</h4>
+						<div>
+							<a class='button' href='contact-us.html'>Užsisakykite dabar!</a>
+						</div>
 					</div>
-					<a class='button' href='nowhere.html'>Užsisakykite dabar!</a>
 				</div>		
 			</div>
 		</section>
@@ -153,7 +144,7 @@
 				<div class="voucher-content">
 					<h3>Aušros Spa namų dovanų kuponai</h3>
 					<h4>A perfect gift to someone secial!</h4>
-					<a class='button dark-button' href='nowhere.html'>Pirkti kuponą</a>
+					<a class='button dark-button' href='contact-us.html'>Pirkti kuponą</a>
 				</div>
 			</div>
 		</section>
@@ -165,7 +156,7 @@
 				<div class="intro">
 					<h5>Naujienos ir pasiūlymai</h5>
 				</div>
-				<div class="owl-carousel kar2 owl-theme">
+				<div class="owl-carousel karusele2 owl-theme">
 					<div class="one-news-column">
 						<div class="top-column">
 							<figure>
@@ -319,22 +310,11 @@
 						</div>
 					</div>
 				</div>
-<!-- 				<div class="three-dots flexinam">
-					<div>
-						<i class="fas fa-circle"></i>
-					</div>
-					<div class="active">
-						<i class="fas fa-circle"></i>
-					</div>
-					<div>
-						<i class="fas fa-circle"></i>
-					</div>
-				</div> -->
 			</div>
 		</section>
-		<!-- 6 SECTION END: NEWS-->
+		<!-- 6 SECTION END: NEWS -->
 
-		<!-- 7 SECTION START: footer-->
+		<!-- 7 SECTION START: FOOTER -->
 		<footer id="contact_us" class="end-footer">
 			<div class="container">
 				<div class="footer-content">
@@ -378,7 +358,7 @@
 				</div>
 			</div>
 		</footer>
-		<!-- 7 SECTION END: footer-->
+		<!-- 7 SECTION END: FOOTER -->
 		<script src="assets/scripts/jquery.js"></script>
 		<script src="owlcarousel/dist/owl.carousel.min.js"></script>
 		<script src="assets/scripts/script.js"></script>

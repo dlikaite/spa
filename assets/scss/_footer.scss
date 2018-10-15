@@ -1,76 +1,75 @@
-/* 9 SECTION START: footer */
+/* 9 SECTION START: FOOTER */
 
 .end-footer {
   background-color: #1f1e1d;
-}
 
-.footer-content {
-  padding: 120px 20px 25px;
-  text-align: center;
-}
+  .footer-content {
+    padding: 120px 20px 25px;
+    text-align: center;
 
-.end-footer img {
-  display: inline;
-  width: 100%;
-}
+    .logo2 {
+      padding: 0;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      max-width: 70px;
 
-.address {
-  margin-bottom: 40px;
-}
+      img {
+        display: inline;
+        width: 100%;
+      }
+    }
 
-.end-footer .logo2 {
-  padding: 0;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  width: 7%;
-}
+    .address {
+      margin-bottom: 40px;
 
-.end-footer h4 {
-  @include uppercase-title;
-  font-size: .875rem;
-  line-height: 34px;
-  color: rgba(255, 255, 255, 0.4);
-}
+      h4 {
+        @include uppercase-title;
+        font-size: .875rem;
+        line-height: 34px;
+        color: rgba(255, 255, 255, 0.4);
+      }
 
-.end-footer a {
-  @include uppercase-title;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: .875rem;
-  line-height: 24px;
+      a {
+        @include uppercase-title;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: .875rem;
+        line-height: 24px;
+      }
+    }
+
+    .rights {
+      margin-top: 100px;
+
+      p {
+        text-transform: capitalize;
+        color: rgba(255, 255, 255, 0.4);
+        font-size: 1rem;
+        line-height: 26px;
+        display: inline;
+      }
+    }
+  }
 }
 
 .icon-social {
   margin-bottom: 20px;
+
+  ul {
+    justify-content: center;
+
+    a {
+      color: #fff;
+
+      i {
+        margin-right: 20px;
+        font-size: 19px;
+        &:hover {
+          color: #e7d2b9;
+        }
+      }
+    }
+  }
 }
 
-.icon-social a {
-  color: #fff;
-}
-
-.icon-social ul {
-  justify-content: center;
-}
-
-.margin i {
-  margin-right: 20px;
-  font-size: 19px;
-}
-
-.icon-social i:hover {
-  color: #e7d2b9;
-}
-
-.rights {
-  margin-top: 100px; 
-}
-
-.rights p {
-  text-transform: capitalize;
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 1rem;
-  line-height: 26px;
-  display: inline;
-}
-
-/* 9 SECTION END: footer */
+/* 9 SECTION END: FOOTER */
