@@ -4,16 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1"> 
 	<title>CONTACT US</title> 
-	<!-- reikia kitos fonto: Karla, Arial, Helvetica, "Nimbus Sans L"!!!-->
-	<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Marcellus&amp;subset=latin-ext" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Marcellus|Roboto:300,300i,400&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 	<!-- START: button-to-top -->
-	<button onclick="topFunction()" class="myBtn" title="Go to top">
+	<button class="myBtn" title="Go to top">
 		<i class="fas fa-angle-up"></i>
 	</button>
 	<!-- END: button-to-top -->
@@ -31,11 +28,11 @@
 					<a href="javascript:void(0);" class="icon_burger"><i class="fa fa-bars"></i></a>
 				</div>
 				<ul class="flexinam topnav">
-					<li><a href="#" class="keep-color">Pradžia</a></li>
+					<li><a href="index.html" class="keep-color">Pradžia</a></li>
 					<li><a href="#us" class="keep-color">Apie mus</a></li>
 					<li><a href="#our_news" class="keep-color">Naujienos</a></li>
 					<li><a href="#our_services" class="keep-color">Paslaugos</a></li>
-					<li><a href="#coupons" class="keep-color">Dovanų kuponai</a></li>
+					<li><a href="#coupons" class="keep-color selected">Dovanų kuponai</a></li>
 					<li><a href="#contact_us" class="keep-color">Kontaktai</a></li>
 				</ul>				
 			</nav>
@@ -78,8 +75,8 @@
 						<div class="one_form">
 							<label for="coupon">Procedūra:<span> *</span></label>
 							<br>
-							<select class="options" required>
-								<option>Pasirinkite</option>
+							<select class="options" size="1" required>
+								<option value="">Pasirinkite</option>
 								<option value="---">---</option>
 								<option value="massage">Masažas</option>
 								<option value="spa_ritual">Spa ritualai</option>
@@ -88,7 +85,6 @@
 								<option value="depilation">Depiliacija</option>
 								<option value="treatments_for_men">Spa procedūra vyrui</option>
 							</select>
-							<!-- <input type="number" id="coupon" name="coupon" value="" required> -->
 						</div>
 						<div class="one_form message">
 							<label for="coupon">Jūsų užklausa<span> *</span></label>
@@ -110,7 +106,7 @@
 		<div class="container">
 			<div class="footer-content">
 				<div class="logo2">
-					<a href="# i pagrindini">
+					<a href="index.html">
 						<img src="assets/images/logo-spa-compressor.png" alt="Aušros spa namai">
 					</a>
 				</div>

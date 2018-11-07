@@ -27,8 +27,8 @@ $(document).ready(function(){
                 items:1
             }
         },
-        autoplay:false,
-        autoplayTimeout:4000, // kaip padaryti letesni transition?
+        autoplay:true,
+        autoplayTimeout:4000,
         autoplayHoverPause:false
     });
 

@@ -5,10 +5,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1"> 
 		<title>SPA</title> 
-		<!-- reikia kitos fonto: Karla, Arial, Helvetica, "Nimbus Sans L"!!!-->
-		<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Marcellus&amp;subset=latin-ext" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i&amp;subset=latin-ext" rel="stylesheet">
+		<!-- pagal dizaina is font family nera nemokamu sriftu, kurie palaikytu lietuviska srifta -->
+		<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Marcellus|Roboto:300,300i,400&amp;subset=latin-ext" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 		<link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
 		<link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
@@ -16,7 +14,7 @@
 	</head>
 	<body>
 		<!-- START: button-to-top -->
-		<button onclick="topFunction()" class="myBtn" title="Go to top">
+		<button class="myBtn" title="Go to top">
 			<i class="fas fa-angle-up"></i>
 		</button>
 		<!-- END: button-to-top -->
@@ -25,7 +23,7 @@
 		<header class="float-navigation"> <!-- zalias --> 
 			<div class="container flexinam">
 				<div class="logo">
-					<a href="#">
+					<a href="index.html">
 						<img src="assets/images/logo-spa-compressor.png" alt="Aušros spa namai">
 					</a>
 				</div>
@@ -34,7 +32,7 @@
 						<a href="javascript:void(0);" class="icon_burger"><i class="fa fa-bars"></i></a>
 					</div>
 					<ul class="flexinam topnav">
-						<li><a href="#" class="keep-color">Pradžia</a></li>
+						<li><a href="index.html" class="keep-color selected">Pradžia</a></li>
 						<li><a href="#us" class="keep-color">Apie mus</a></li>
 						<li><a href="#our_news" class="keep-color">Naujienos</a></li>
 						<li><a href="#our_services" class="keep-color">Paslaugos</a></li>
@@ -48,21 +46,21 @@
 		<!-- 2 SECTION START-->
 		<section class="carousel">
 			<div class="owl-carousel karusele1 owl-theme">
-				<div class="special-container photo flexinam first">
+				<div class="special-container photo flexinam first" style="background-image: url(assets/images/big_towel-compressor.jpg);">
 					<div class="content">
 						<h3>Sveiki atvykę į aušros spa namus!</h3>
 						<h4>Mūsų svetainėje galite surasti visas teikiamas paslaugas ir jų kainas</h4>
 						<div>
-							<a class='button' href='#our_services'>Paslaugos</a>
+							<a class='button hover_brown' href='#our_services'>Paslaugos</a>
 						</div>
 					</div>
 				</div>
-				<div class="special-container photo flexinam second">
+				<div class="special-container photo flexinam second" style="background-image: url(assets/images/big_mask-compressor.jpg);">
 					<div class="content">
 						<h3>Sveiki atvykę į aušros spa namus!</h3>
 						<h4>Pas mus galite įsigyti dovanų kuponus visoms mūsų paslaugoms internetu!</h4>
 						<div>
-							<a class='button' href='contact-us.html'>Užsisakykite dabar!</a>
+							<a class='button hover_white' href='contact-us.html'>Užsisakykite dabar!</a>
 						</div>
 					</div>
 				</div>		
@@ -86,6 +84,8 @@
 				</div>
 			</div>
 		</section>
+		<!-- 4 SECTION END: ABOUT US-->
+		<!-- 5 SECTION START: INTRO TO SERVICES-->
 		<section id="our_services" class="intro-to-service">
 			<div class="container flexinam">
 				<div class="antraste">
@@ -96,6 +96,8 @@
 				</div>
 			</div>
 		</section>
+		<!-- 5 SECTION END: INTRO TO SERVICES-->
+		<!-- 6 SECTION START: SERVICES-->
 		<section class="paslaugos">
 			<div class="container">
 				<div class="service-photos flexinam">
@@ -131,16 +133,16 @@
 					</div>
 					<div class="spa">
 						<a href="http://luxury-spa.cmsmasters.net/services/">
-							<img src="assets/images/pedicure-compressor.jpg">
+							<img src="assets/images/pedicure-compressor.jpg" alt="pedicure">
 							<span class="centered overlayw3">aesthetics</span>
 						</a>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- 4 SECTION END: SERVICES-->
+		<!-- 5 SECTION END: SERVICES-->
 
-		<!-- 5 SECTION START: VOUCHERS-->
+		<!-- 6 SECTION START: VOUCHERS-->
 		<section id="coupons" class="voucher">
 			<div class="container flexinam">
 				<div class="voucher-content">
@@ -150,9 +152,9 @@
 				</div>
 			</div>
 		</section>
-		<!-- 5 SECTION END: VOUCHERS-->
+		<!-- 6 SECTION END: VOUCHERS-->
 
-		<!-- 6 SECTION START: NEWS-->
+		<!-- 7 SECTION START: NEWS-->
 		<section id="our_news" class="news">
 			<div class="container">
 				<div class="intro">
@@ -162,9 +164,9 @@
 					<div class="one-news-column">
 						<div class="top-column">
 							<figure>
-								<img src="assets/images/bowl-compressor.jpg">
+								<img src="assets/images/bowl-compressor.jpg" alt="spa">
 								<div class="top-right">
-									<a href="#nuveda i article">Wellness</a>
+									<a href="#">Wellness</a>
 								</div>
 							</figure>
 						</div>
@@ -186,13 +188,11 @@
 					<div class="one-news-column">
 						<div class="top-column">
 							<figure>
-								<img src="assets/images/citrus-compressor.jpg">
-								<!-- kaip padaryti, kad a padengtu visa foto? -->
+								<img src="assets/images/citrus-compressor.jpg" alt="massage">
 								<div class="top-right">
-									<a href="#nuveda i article">massage</a>
+									<a href="#">massage</a>
 								</div>
 							</figure>
-							 <!-- https://www.w3schools.com/howto/howto_css_image_text.asp -->
 						</div>
 						<div class="bottom-column">
 							<header>
@@ -212,13 +212,11 @@
 					<div class="one-news-column">
 						<div class="top-column">
 							<figure>
-								<img src="assets/images/bathtub-compressor.jpg">
-								<!-- kaip padaryti, kad a padengtu visa foto? -->
+								<img src="assets/images/bathtub-compressor.jpg" alt="deep tissue massage bathtub">
 								<div class="top-right">
-									<a href="#nuveda i article">massage</a>
+									<a href="#">massage</a>
 								</div>
 							</figure>
-							 <!-- https://www.w3schools.com/howto/howto_css_image_text.asp -->
 						</div>
 						<div class="bottom-column">
 							<header>
@@ -238,9 +236,9 @@
 					<div class="one-news-column">
 						<div class="top-column">
 							<figure>
-								<img src="assets/images/sink-compressor.jpg">
+								<img src="assets/images/sink-compressor.jpg" alt="spa home">
 								<div class="top-right">
-									<a href="#nuveda i article">spa</a>
+									<a href="#">spa</a>
 								</div>
 							</figure>
 						</div>
@@ -262,13 +260,11 @@
 					<div class="one-news-column">
 						<div class="top-column">
 							<figure>
-								<img src="assets/images/massage-compressor.jpg">
-								<!-- kaip padaryti, kad a padengtu visa foto? -->
+								<img src="assets/images/massage-compressor.jpg" alt="aromatherapy">
 								<div class="top-right">
-									<a href="#nuveda i article">aromatherapy</a>
+									<a href="#">aromatherapy</a>
 								</div>
 							</figure>
-							 <!-- https://www.w3schools.com/howto/howto_css_image_text.asp -->
 						</div>
 						<div class="bottom-column">
 							<header>
@@ -288,13 +284,11 @@
 					<div class="one-news-column">
 						<div class="top-column">
 							<figure>
-								<img src="assets/images/bali-compressor.jpg">
-								<!-- kaip padaryti, kad a padengtu visa foto? -->
+								<img src="assets/images/bali-compressor.jpg" alt="spa breaks">
 								<div class="top-right">
-									<a href="#nuveda i article">spa breaks</a>
+									<a href="#">spa breaks</a>
 								</div>
 							</figure>
-							 <!-- https://www.w3schools.com/howto/howto_css_image_text.asp -->
 						</div>
 						<div class="bottom-column">
 							<header>
@@ -314,14 +308,14 @@
 				</div>
 			</div>
 		</section>
-		<!-- 6 SECTION END: NEWS -->
+		<!-- 7 SECTION END: NEWS -->
 
-		<!-- 7 SECTION START: FOOTER -->
+		<!-- 8 SECTION START: FOOTER -->
 		<footer id="contact_us" class="end-footer">
 			<div class="container">
 				<div class="footer-content">
 					<div class="logo2">
-						<a href="# i pagrindini">
+						<a href="index.html">
 							<img src="assets/images/logo-spa-compressor.png" alt="Aušros spa namai">
 						</a>
 					</div>
@@ -360,7 +354,7 @@
 				</div>
 			</div>
 		</footer>
-		<!-- 7 SECTION END: FOOTER -->
+		<!-- 8 SECTION END: FOOTER -->
 		<script src="assets/scripts/jquery.js"></script>
 		<script src="owlcarousel/dist/owl.carousel.min.js"></script>
 		<script src="assets/scripts/script.js"></script>

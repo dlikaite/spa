@@ -59,14 +59,14 @@ body {
 }
 
 ul {
-	list-style: none; /* kad nebutu bullet pointu */
+	list-style: none;
   margin: 0;
   padding: 0;
 }
 
 img {
-  width: 100%; /* padaro, kad prisitaikytu prie tevynainio */
-  display: block; /* kad nebutu tarpelio po nuotrauka */
+  width: 100%;
+  display: block;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -76,6 +76,8 @@ h1, h2, h3, h4, h5, h6, p {
 a {
   text-decoration: none;
   text-transform: uppercase;
+  color: #fff;
+  font-family: $karla;
 }
 
 p {
@@ -103,8 +105,12 @@ p {
     position: relative;
     display: block;
 
-    a.icon_burger {
-      display: block;
+    a {
+      font-size: 1rem;
+
+      &.icon_burger {
+        display: block;
+      }
     }
   }
 
@@ -120,30 +126,40 @@ p {
     background-color: $baseColor;
     text-align: right;
     padding-bottom: 15px;
+    line-height: 30px;
   }
 }
 
 // CAROUSEL SECTION
 
 @media all and (max-width: 600px) {
-  .first .content {
-    padding-left: 20px;
-    max-width: 280px;
-  }
+  .photo {
 
-  .second .content {
-    padding-left: 20px;
-    max-width: 300px;
-    a {
-      max-width: 30%;
+    &.first .content, &.second .content {
+      padding-left: 20px;
+      max-width: 280px;
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      h4{
+        font-size: 1.5rem;
+      }
+
+      .button{
+        padding: 10px 28px;
+        letter-spacing: 2px;
+      }
     }
-  }
 
-  .carousel h3 {
-    font-size: 1rem;
-  }
-  .carousel h4{
-    font-size: 1.5rem;
+    &.second .content {
+      max-width: 270px;
+
+      .button {
+        max-width: 30%;
+      }
+    }
   }
 }
 
@@ -151,8 +167,8 @@ p {
 
 @media all and (max-width: 600px) {
   .content-about-us {
-    margin-top: 90px;
-    margin-bottom: 110px;
+    margin-top: 170px;
+    margin-bottom: 170px;
   }
 }
 
@@ -166,7 +182,7 @@ p {
 
 @media screen and (max-width: 750px) {
   .intro-to-service .container {
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 70px;
     display: block;
     margin: 0 20px 0px 20px;
@@ -206,8 +222,8 @@ p {
 
 @media all and (max-width: 1000px) {
   .voucher .container {
-    padding-top: 230px;
-    padding-bottom: 230px;
+    padding-top: 260px;
+    padding-bottom: 250px;
     justify-content: center;
   }
 }
@@ -225,7 +241,7 @@ p {
 
 @media all and (max-width: 600px) {
   .news .container {
-    padding: 50px 20px;
+    padding: 100px 20px;
   }
 }
 
